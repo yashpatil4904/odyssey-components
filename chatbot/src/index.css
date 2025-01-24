@@ -1,0 +1,18 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: url('https://hips.hearstapps.com/hmg-prod/images/gettyimages-1673453535.jpg') center calc(50% + 50px) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Darken the image */
+  z-index: -1; /* Ensure it's behind the content */
+}
